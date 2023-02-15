@@ -1,6 +1,7 @@
 var hora = new Date()
 var diurno = document.querySelector('div#diurno')
 var projeto = document.querySelector('div#projetos')
+
 function atualizar() {
     let horatual = hora.getHours();
    
@@ -24,15 +25,30 @@ function atualizar() {
 }
 }
 
+
 function contar(){
-    let numInit = document.getElementById('numInit')
-    let numFim = document.getElementById('numFim')
-    let cont = document.getElementById('cont')
-    if (numInit.length == 0 || numFim.length == 0){
-        window.alert('nao e possivel fazer a contagem!')
-    }else{
-    for(let c = numInit.value;c <= numFim.value;c++){
-        res.innerHTML = `${c}`
+    function isNumber(x=0, y=0){
+        if (x <= 0){
+            return 'valor invalido verifique e tente novamente!'
+        }else{
+            return true
+        }
     }
-}
+    let numInit = document.getElementById('numInit')
+    //let numFim = document.getElementById('numFim')
+    let numFim = 0
+    let cont = document.getElementById('cont')
+    var isNumber = isNumber(Number(numInit.value), numFim);
+    cont.style.transition = 'all .5s ease';
+    if (isNumber == true){
+        let numinit = numInit.value
+        for(let c = numinit;c >= numFim;c--){
+            cont.innerText = ''
+            cont.innerHTML += `<span>contando. ${c}</span>`
+            
+        };
+    }else{
+        alert(`[ERROR]-${isNumber}`)
+    }
+
 }
