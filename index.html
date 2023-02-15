@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog pessoal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/dd82567ff5.js" crossorigin="anonymous"></script>
+</head>
+<body onload="atualizar()">
+          <input type="checkbox" name="check" id="check">
+  <header id="menu">
+    <span class="menu">Menu</span>
+   <label for="check"> <i class="fas fa-bars" id="icone"></i></label> 
+            <ul>
+              <li><a href="index.html">pagina inicial</a></li>
+              <li><a href="login.html">login</a></li>
+              <li><a href="fotos.html">projetos</a></li>
+              
+              
+            </ul>
+          </header>
+        <section class="conteiner">
+          <h1>Portfólio</h1>
+            <h2>Um pouco sobre Patrick</h2>
+          <p>Olá mundo!<br>
+          meu nome é Patrick marquezini, tenho 21 anos de idade.
+          atualmente trabalho no setor de embalagem de assisténcia, na <strong>"BIANCHI MOVEIS"</strong>desde outubro de 2020
+        <br>
+        estudo <abbr title="linguagem de marcação de Hipertexto">HTML</abbr> <abbr title="folha de estilo em cascata">CSS</abbr> e JavaScript
+        aqui esta alguns dos meus projetos
+           </p>
+           <h2>Projetos</h2>
+           <div id="diurno">
+            <div id="projetos">
+              <p>Agora são </p><br>
+            
+            </div>
+            <div id="contador">
+              <p>Valor inicial <input type="number" id="numInit" class="btn"><br>
+              Valor final <input type="number" id="numFim" class="btn"></p>
+              <span id="cont">0</span>
+              <input type="button" id="init" value="contar" onclick="contar()">
+             </div>
+           </div>
+           <br>
+           
+        </section>
+        
+        <footer class="rodape"> &copy;Desenvolvido por Patrick Marquezine</footer>
+      <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <span>Vamos contar</span>
+    </header>   
+    <section>
+    <div id="conteiner">
+        <p>Digite uma tabuada: <input type="number" id="entrada"></p>
+        <p>Escolha um operador
+            <select id="select">
+                <option>adição</option>
+                <option>subtração</option>
+                <option>multiplicação</option>
+                <option>divisão</option>
+            </select></p>
+        <input type="button" value="calcular" id="btn" onclick="calcular()">
+        <div id="res">
+        <p>Tabuada de:</p>
+        </div>
+    </div>
+    </section>
+    <p>&copy;By Patrick</p>
+    <script src="index.js"></script>
+</body>
+</html>

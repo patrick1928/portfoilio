@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Sevillana&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 1000px;
+    background-attachment: fixed;
+    display: flex;
+    font-family: 'sans-serif', arial;
+}
+header#menu{
+    width: 30%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #171433, #1500ffa1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 5px #171433;
+    
+    
+}
+header#menu ul{
+   width: 100%;
+    
+}
+header#menu ul li{
+    background-color: #dddddd;
+    margin-top: 25px;
+    width: 80%;
+    box-shadow: 2px 2px 3px #000000b4;
+    margin: 10px auto 0 10%;
+    text-align: center;
+    list-style: none;
+    padding-top: 3px;
+    border-radius: 10px;
+    font-size: 20pt;
+    color: black;
+}
+header#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header#menu ul li:hover{
+    transition: all .3s ease;
+    background: #2E2680;
+    color: white;
+}
+header#menu ul li a:hover{
+   
+}
+section.conteiner{
+    width: 60%;
+    height: 627px;
+    float: right;
+    top:0;
+    margin: 0 auto 0 auto;
+    text-align: justify;
+}
+div#diurno{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #606060;
+}
+div#projetos{
+    background: white;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    height: 50%;
+    box-shadow: 1px 1px 3px #0000009b;
+}
+#contador{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+input.btn{
+    width: 20%;
+    margin: auto;
+    display:block;
+    
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+footer{
+    bottom: -1000px;
+    position: absolute;
+    left: 40%;
+}
+#check{
+    display: none;
+}
+span.menu{
+    color: #807118;
+    
+    font-size: 25pt;
+    padding: 0 25px 0 25px;
+    margin: 10px auto 0 auto;
+    width: 60%;
+    position: relative;
+    text-align: center;
+}
