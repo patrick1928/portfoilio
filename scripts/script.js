@@ -28,7 +28,7 @@ function atualizar() {
 
 function contar(){
     function isNumber(x=0, y=0){
-        if (x < 0 || y < 0){
+        if (x <= 0 || y <= 0){
             return 'valor invalido verifique e tente novamente!'
         }else{
             return true
@@ -39,12 +39,14 @@ function contar(){
     
     let cont = document.getElementById('cont')
     var isNumber = isNumber(Number(numInit.value), Number(numFim.valu,));
-    cont.style.transition = 'all .5s ease';
+    
     if (isNumber == true){
-        let numinit = numInit.value
-        let numfim = numFim.value
-        for(let c = numinit;c > numfim;c--){
-          cont.innerHTML += c
+        cont.innerHTML = ''
+        let i = Number(numInit.value)
+        let f = Number(numFim.value)
+
+        for(let c = i; c > f; c--){
+          cont.innerHTML += `<br><span>${c}</span>`
             
         };
     }else{
