@@ -28,7 +28,7 @@ function atualizar() {
 
 function contar(){
     function isNumber(x=0, y=0){
-        if (x <= 0){
+        if (x < 0 || y < 0){
             return 'valor invalido verifique e tente novamente!'
         }else{
             return true
@@ -43,8 +43,7 @@ function contar(){
     if (isNumber == true){
         let numinit = numInit.value
         for(let c = numinit;c >= numFim;c--){
-            cont.innerText = ''
-            cont.innerHTML += `<span>contando. ${c}</span>`
+          cont.innerHTML = c
             
         };
     }else{
