@@ -42,8 +42,8 @@ function contar(){
     cont.style.transition = 'all .5s ease';
     if (isNumber == true){
         let numinit = numInit.value
-        for(let c = numinit;c >= numFim;c--){
-          cont.innerHTML = c
+        for(let c = numinit;c > numFim;c--){
+          cont.innerHTML += c
             
         };
     }else{
