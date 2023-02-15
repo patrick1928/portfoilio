@@ -38,15 +38,21 @@ function contar(){
     let numFim = document.getElementById('numFim')
     
     let cont = document.getElementById('cont')
-    var isNumber = isNumber(Number(numInit.value), Number(numFim.valu,));
+    var isNumber = isNumber(Number(numInit.value), Number(numFim.value,));
     
     if (isNumber == true){
-        cont.innerHTML = ''
+        
         let i = Number(numInit.value)
         let f = Number(numFim.value)
 
-        for(let c = i; c > f; c--){
-          cont.innerHTML += `<br><span>${c}</span>`
+        for(let c = i; c >= f; c--){
+            setTimeout(() =>{
+                cont.innerHTML = '',
+                cont.innerHTML += `<br><span>${c}</span>`
+                console.log(c)
+            },'1000')
+            
+         
             
         };
     }else{
