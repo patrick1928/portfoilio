@@ -14,7 +14,7 @@ function atualizar() {
         projeto.innerHTML += `<p>${horatual} horas!</p>`
         
     }
-    else if(horatual >= 18 && horatual < 23){
+    else if (horatual >= 18 && horatual < 23){
         diurno.style.background = '#2E2680'
         projeto.innerHTML += `<p>${horatual} horas!</p>`
     }
@@ -35,14 +35,15 @@ function contar(){
         }
     }
     let numInit = document.getElementById('numInit')
-    //let numFim = document.getElementById('numFim')
-    let numFim = 0
+    let numFim = document.getElementById('numFim')
+    
     let cont = document.getElementById('cont')
-    var isNumber = isNumber(Number(numInit.value), numFim);
+    var isNumber = isNumber(Number(numInit.value), Number(numFim.valu,));
     cont.style.transition = 'all .5s ease';
     if (isNumber == true){
         let numinit = numInit.value
-        for(let c = numinit;c > numFim;c--){
+        let numfim = numFim.value
+        for(let c = numinit;c > numfim;c--){
           cont.innerHTML += c
             
         };
