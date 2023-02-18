@@ -25,7 +25,6 @@ function atualizar() {
 }
 }
 
-
 function contar(){
     function isNumber(x=0, y=0){
         if (x <= 0 || y <= 0){
@@ -46,17 +45,12 @@ function contar(){
         let f = Number(numFim.value)
 
         for(let c = i; c >= f; c--){
-            setTimeout(() =>{
-                cont.innerHTML = '',
-                cont.innerHTML += `<br><span>${c}</span>`
-                console.log(c)
-            },'1000')
-            
-         
-            
-        };
-    }else{
+            console.log(c)
+            cont.innerText = ''
+            cont.innerText += `${c}`
+        }
+    }else
         alert(`[ERROR]-${isNumber}`)
     }
 
-}
+    
