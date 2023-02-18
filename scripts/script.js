@@ -1,7 +1,24 @@
 var hora = new Date()
 var diurno = document.querySelector('div#diurno')
 var projeto = document.querySelector('div#projetos')
-
+var check = document.getElementById('check')
+var sidebar = document.getElementById('sidebar')
+//interação com o sidebar
+var sidebarCheck = () =>{
+    let iconCheck = document.getElementById('icone')
+    if (check.checked){
+        sidebar.style.left = '0';
+        iconCheck.style.left ='200px'
+    }else{
+        sidebar.style.left = '-200px';
+        iconCheck.style.left ='0'
+    }
+    }
+check.addEventListener('click' ,function(){
+sidebarCheck()
+})
+//fim
+//projeto hora
 function atualizar() {
     let horatual = hora.getHours();
    
@@ -24,7 +41,8 @@ function atualizar() {
 
 }
 }
-
+//fim
+//projeto cronometro
 function contar(){
     function isNumber(x=0, y=0){
         if (x <= 0 || y <= 0){
@@ -55,5 +73,6 @@ function contar(){
     }else
         alert(`[ERROR]-${isNumber}`)
     }
+    //fim
 
     
