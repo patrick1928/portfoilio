@@ -113,3 +113,8 @@ span.menu{
     position: relative;
     text-align: center;
 }
+@media screen and (max-width:400px){
+  header#menu{
+    display: none;
+  }
+}
