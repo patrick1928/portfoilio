@@ -45,15 +45,13 @@ function contar(){
         let f = Number(numFim.value)
         let c = i
         while(i >= f){
-            
-            (function(i) {
-            setTimeOut(function() {
-                res.innerHTML += `${c}`
+            setTimeout(function() {
+                res.innerHTML = `${c}`
                 c--
-            }, 1000)
+            }, 1000 * i)
             i--
         }
-    )}
+    
     }else
         alert(`[ERROR]-${isNumber}`)
     }
