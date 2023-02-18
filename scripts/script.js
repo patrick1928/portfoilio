@@ -35,7 +35,7 @@ function contar(){
     }
     let numInit = document.getElementById('numInit')
     let numFim = document.getElementById('numFim')
-    
+    var res = document.getElementById('res')
     let cont = document.getElementById('cont')
     var isNumber = isNumber(Number(numInit.value), Number(numFim.value,));
     
@@ -43,12 +43,17 @@ function contar(){
         
         let i = Number(numInit.value)
         let f = Number(numFim.value)
-
-        for(let c = i; c >= f; c--){
-            console.log(c)
-            cont.innerText = ''
-            cont.innerText += `${c}`
+        let c = i
+        while(i >= f){
+            
+            (function(i) {
+            setTimeOut(function() {
+                res.innerHTML += `${c}`
+                c--
+            }, 1000 * i)
+            
         }
+    )}
     }else
         alert(`[ERROR]-${isNumber}`)
     }
