@@ -18,7 +18,7 @@ div#sidebar{
     flex-direction: column;
     align-items: center;
     box-shadow: 3px 3px 5px #171433;
-    position: relative;
+    transition: all .5s ease;
     
 }
 div#sidebar ul{
@@ -110,6 +110,7 @@ footer{
     top: 0;
     display:none;
     float: right;
+    transition: all .5s ease;
 }
 span.menu{
     color: #807118;
@@ -125,6 +126,7 @@ span.menu{
     #sidebar{
         position: absolute;
         left: -200px;
+        z-index: 100;
     }
   .conteiner{
     width: 90%;
