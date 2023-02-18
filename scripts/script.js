@@ -50,8 +50,8 @@ function contar(){
             setTimeOut(function() {
                 res.innerHTML += `${c}`
                 c--
-            }, 1000 * i)
-            
+            }, 1000)
+            i--
         }
     )}
     }else
