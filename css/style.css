@@ -13,6 +13,7 @@ body{
 }
 div#sidebar{
     height: 100vh;
+    width: 30vh;
     background: linear-gradient(to bottom, #171433, #1500ffa1);
     display: flex;
     flex-direction: column;
@@ -41,6 +42,7 @@ div#sidebar ul li{
 div#sidebar ul li a{
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 15pt;
 }
 div#sidebar ul li:hover{
     transition: all .3s ease;
@@ -59,21 +61,25 @@ section.conteiner{
     padding: 15px;
     text-align: justify;
 }
-div#diurno{
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #606060;
+section div#cabecalho{
+    border-bottom: 1px dotted black;
+    padding-bottom: 10px;
 }
-div#projetos{
-    background: white;
+div#diurno{
     position: relative;
     text-align: center;
     width: 50%;
     height: 50%;
+    color: white;
     box-shadow: 1px 1px 3px #0000009b;
+}
+
+div#projetos{
+     height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 #contador{
     height: 150px;
@@ -81,7 +87,6 @@ div#projetos{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: white;
 }
 input.btn{
     width: 20%;
@@ -95,10 +100,21 @@ h1{
 h2{
     text-align: center;
 }
+h3{
+
+}
+div#projetos{
+
+}
 footer{
-    bottom: -1000px;
-    position: absolute;
-    left: 40%;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+
+}
+footer p{
+    margin: auto;
+    text-align: center;
 }
 #check{
     display: none;
@@ -125,7 +141,7 @@ span.menu{
 @media screen and (max-width:500px){
     #sidebar{
         position: absolute;
-        left: -200px;
+        left: -250px;
         z-index: 100;
     }
   .conteiner{
