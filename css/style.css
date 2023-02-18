@@ -117,4 +117,7 @@ span.menu{
   header#menu{
     display: none;
   }
+  .conteiner{
+    width: 100%;
+  }
 }
