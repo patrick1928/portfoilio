@@ -3,9 +3,10 @@ var diurno = document.querySelector('div#diurno')
 var projeto = document.querySelector('div#projetos')
 var check = document.getElementById('check')
 var sidebar = document.getElementById('sidebar')
+let iconCheck = document.getElementById('icone')
 //interação com o sidebar
-var sidebarCheck = () =>{
-    let iconCheck = document.getElementById('icone')
+const sidebarCheck = () =>{
+    
     if (check.checked){
         sidebar.style.left = '0';
         iconCheck.style.left ='200px'
@@ -14,8 +15,19 @@ var sidebarCheck = () =>{
         iconCheck.style.left ='0'
     }
     }
+    //fim
+    //esconder o sidebar quando o usuario pressionar fora do proprio
+    const mouseOut = () =>{
+        sidebar.style.left = '-200px'
+        iconCheck.style.left = '0'
+        check.checked = false
+        }
+    
+    sidebar.addEventListener('mouseleave', function(){
+    mouseOut()
+})
 check.addEventListener('click' ,function(){
-sidebarCheck()
+    sidebarCheck()
 })
 //fim
 //projeto hora
