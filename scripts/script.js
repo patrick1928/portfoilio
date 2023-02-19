@@ -3,16 +3,17 @@ var diurno = document.querySelector('div#diurno')
 var projeto = document.querySelector('div#projeto')
 var check = document.getElementById('check')
 var sidebar = document.getElementById('sidebar')
-let iconCheck = document.getElementById('icone')
+var iconCheck = document.getElementById('icone')
 //interação com o sidebar
 const sidebarCheck = () =>{
-    
     if (check.checked){
         sidebar.style.left = '0';
         iconCheck.style.left ='170px'
+        iconCheck.setAttribute('class', 'fa-solid fa-x');
     }else{
         sidebar.style.left = '-250px';
         iconCheck.style.left ='0'
+        iconCheck.setAttribute('class','fas fa-bars');
     }
     }
     //esconder o sidebar quando o usuario pressionar fora do proprio
@@ -20,6 +21,7 @@ const sidebarCheck = () =>{
         sidebar.style.left = '-250px'
         iconCheck.style.left = '0'
         check.checked = false
+        iconCheck.setAttribute('class','fas fa-bars');
         }
     
     sidebar.addEventListener('mouseleave', function(){
@@ -76,10 +78,12 @@ function contar(){
         let i = Number(numInit.value)
         let f = Number(numFim.value)
         let c = i
-        while(i >= f){
+       
+        while(i >= 0){
             setTimeout(function() {
                 res.innerHTML = `${c}`
                 c--
+                i = i - f
             }, 1000 * i)
             i--
         }
