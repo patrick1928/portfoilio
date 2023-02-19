@@ -78,12 +78,12 @@ function contar(){
         let i = Number(numInit.value)
         let f = Number(numFim.value)
         let c = i
-       
+        i = i - f
         while(i >= 0){
             setTimeout(function() {
                 res.innerHTML = `${c}`
                 c--
-                i = i - f
+                
             }, 1000 * i)
             i--
         }
@@ -92,5 +92,3 @@ function contar(){
         alert(`[ERROR]-${isNumber}`)
     }
     //fim
-
-    
