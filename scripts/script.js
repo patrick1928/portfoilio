@@ -9,7 +9,7 @@ const sidebarCheck = () =>{
     
     if (check.checked){
         sidebar.style.left = '0';
-        iconCheck.style.left ='230px'
+        iconCheck.style.left ='170px'
     }else{
         sidebar.style.left = '-250px';
         iconCheck.style.left ='0'

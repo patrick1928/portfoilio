@@ -125,6 +125,7 @@ footer p{
     display:none;
     float: right;
     transition: all .5s ease;
+    
 }
 span.menu{
     color: #807118;
@@ -149,5 +150,9 @@ span.menu{
   #icone{
     display: block;
     left: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.512);
+    padding: 5px;
+    border-radius: 10%;
   }
 }
