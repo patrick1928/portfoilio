@@ -17,7 +17,7 @@ div.amostras{
     
 }
 div#sidebar{
-    height: 100%;
+    height: 100vw;
     width: 270px;
     background: linear-gradient(to bottom, #171433, #1500ffa1);
     display: flex;
