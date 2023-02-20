@@ -139,8 +139,8 @@ footer p{
     animation-duration: .8s;
     animation-name: sidebar;
 }
-@keyframes sidebar{
-    
+strong{
+    text-transform: uppercase;
 }
 span.menu{
     color: #807118;

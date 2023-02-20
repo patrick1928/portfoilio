@@ -37,23 +37,24 @@ check.addEventListener('click' ,function(){
 //projeto hora
 function atualizar() {
     let horatual = hora.getHours();
+    let minAtual = hora.getMinutes();
     
     if (horatual < 12 && horatual >= 6){
         diurno.style.background = '#1b02fff0'
-        diurno.innerHTML += `<p>${horatual} horas da manha!</p>`
+        diurno.innerHTML += `<p>${horatual} horas e ${minAtual} minutos!</p>`
     }
     else if (horatual >= 12 && horatual < 18){
         diurno.style.background = '#807118'
-        diurno.innerHTML += `<p>${horatual} horas da tarde!</p>`
+        diurno.innerHTML += `<p>${horatual} horas e ${minAtual} minutos!</p>`
         
     }
     else if (horatual >= 18 && horatual < 23){
         diurno.style.background = '#2E2680'
-        diurno.innerHTML += `<p>${horatual} horas da noite!</p>`
+        diurno.innerHTML += `<p>${horatual} horas e ${minAtual} minutos!</p>`
     }
     else{
         diurno.style.background = '#0B0080'
-        diurno.innerHTML += `<p>${horatual} horas da madrugada!</p>`
+        diurno.innerHTML += `<p>${horatual} horas e ${minAtual} minutos!</p>`
 
 }
 }
@@ -61,7 +62,7 @@ function atualizar() {
 //projeto cronometro
 function contar(){
     function isNumber(x=0, y=0){
-        if (x < 0 || y < 0){
+        if (x <= 0 || y < 0){
             return 'valor invalido verifique e tente novamente!'
         }else{
             return true
