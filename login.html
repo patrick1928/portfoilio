@@ -6,76 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
     <script src="https://kit.fontawesome.com/dd82567ff5.js" crossorigin="anonymous"></script>
-    <style>
-        main#conteudo{
-            display: flex;
-            flex-direction: column;
-            
-        }
-        div.formulario{
-            box-shadow: 2px 2px 4px #000000;
-            margin: auto;
-            padding: 20px;
-            top: 50px;
-            position: relative;
-            width: 40%;
-        }
-        div.formulario form{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            padding: auto;
-        }
-        span{
-            font-size: 8pt;
-        }
-        input{
-            outline: none;
-            border: none;
-            border-bottom: 2px solid black;
-            margin-bottom: 5px;
-            transition: all .2s ease;
-        }
-        input:last-child{
-            border-bottom: none;
-        }
-        input:focus{
-            border-bottom: 2px solid #eca582;
-        }
-
-    </style>
 </head>
 <body>
-    <main id="conteiner">
-    <section id="top-bar">
+    <header id="menu">
         <input type="checkbox" name="check" id="check">
-        <label for="check"> <i class="fas fa-bars" id="menu"></i></label> 
-        <div class="sidebar">
-        
-          <ul>
-            <li><a href="index.html">pagina inicial</a></li>
-            <li><a href="login.html">login</a></li>
-            <li><a href="sobre.html">sobre nós</a></li>
-            <li><a href="fotos.html">fotos</a></li>
-          </ul>
-         </div>
-      </section>
-      <div class="formulario">
-        <form action="index.html">
-            <p>acesse sua conta <br>ou <a href="registrar-se.html">crie uma aqui</a></p>
-            <label for="email"> E-mail</label>
-            <input type="email" id="email" placeholder="exemplo123@gmail.com">
-            <label for="senha">senha</label>
-            <input type="password" id="senha" placeholder="******" minlength="6">
-            <input type="button" id="btn" value="entrar">
-            <p><span>Esqueceu sua senha? <a href="#">clique aqui!</a></span></p>
-        </form>
-      </div>
+        <label for="check"> <i class="fas fa-bars" id="icone"></i></label> 
+        <div id="sidebar">
+          <span class="menu" >Menu</span>
+                <ul>
+                  <li><a href="index.html">pagina inicial</a></li>
+                  <li><a href="login.html">login</a></li>
+                  <li><a href="fotos.html">projetos</a></li>
+                  </ul>
+              </div>
+              </header>
+              <section class="conteiner">
+            <div id="login">
+                <label for="email">E-mail <i class="fa-solid fa-envelope"></i> <input type="email" class="btns" id="email" placeholder="exemplo123@gmail.com">
+                </label>
+                <label for="pass">Senha <i class="fa-solid fa-lock"></i> <input type="password" class="btns" id="pass" placeholder="******" style="width: 40%;"></label>
+                <input type="button" class="btn" id="log" value="Entrar">
+            </div>
+            <div id="cadastro">
 
+            </div>
+              </section>
+              
       <footer class="rodape"> &copy;Escrito por Amanda de oliveira cauneto<br>
         editado por patrick marquezine</footer>
     </main>
     <script src="scripts/login.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

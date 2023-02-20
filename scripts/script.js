@@ -1,9 +1,9 @@
 var hora = new Date()
 var diurno = document.querySelector('div#diurno')
 var projeto = document.querySelector('div#projeto')
-var check = document.getElementById('check')
-var sidebar = document.getElementById('sidebar')
-var iconCheck = document.getElementById('icone')
+var check = document.querySelector('input#check')
+var sidebar = document.querySelector('div#sidebar')
+var iconCheck = document.querySelector('i#icone')
 //interação com o sidebar
 const sidebarCheck = () =>{
     if (check.checked){

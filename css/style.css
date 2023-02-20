@@ -14,6 +14,7 @@ body{
 div.amostras{
     width: 30px;
     height: 30px;
+    
 }
 div#sidebar{
     height: 100%;
@@ -57,7 +58,6 @@ div#sidebar ul li:hover{
 }
 section.conteiner{
     width: 90%;
-    height: 627px;
     float: right;
     top:0;
     margin: 0 auto 0 auto;
@@ -79,7 +79,6 @@ div#diurno{
 
 div#projetos{
     width: 100%;
-     height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
