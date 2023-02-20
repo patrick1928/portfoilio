@@ -36,24 +36,24 @@ check.addEventListener('click' ,function(){
 //fim
 //projeto hora
 function atualizar() {
-    let horatual = hora.getHours();
-   
+    //let horatual = hora.getHours();
+    let horatual = 19
     if (horatual < 12 && horatual >= 6){
-        diurno.style.background = '#1500ffa1'
-        diurno.innerHTML += `<p>${horatual} horas!</p>`
+        diurno.style.background = '#1b02fff0'
+        diurno.innerHTML += `<p>${horatual} horas da manha!</p>`
     }
     else if (horatual >= 12 && horatual < 18){
-        diurno.style.background = '#5B4DFF'
-        diurno.innerHTML += `<p>${horatual} horas!</p>`
+        diurno.style.background = '#807118'
+        diurno.innerHTML += `<p>${horatual} horas da tarde!</p>`
         
     }
     else if (horatual >= 18 && horatual < 23){
         diurno.style.background = '#2E2680'
-        diurno.innerHTML += `<p>${horatual} horas!</p>`
+        diurno.innerHTML += `<p>${horatual} horas da noite!</p>`
     }
     else{
         diurno.style.background = '#0B0080'
-        diurno.innerHTML += `<p>${horatual} horas!</p>`
+        diurno.innerHTML += `<p>${horatual} horas da madrugada!</p>`
 
 }
 }

@@ -12,7 +12,7 @@ body{
     font-family: 'sans-serif', arial;
 }
 div#sidebar{
-    height: 100vh;
+    height: 100%;
     width: 30vh;
     background: linear-gradient(to bottom, #171433, #1500ffa1);
     display: flex;
@@ -24,10 +24,10 @@ div#sidebar{
 }
 div#sidebar ul{
    width: 100%;
-    
+    margin-top: 25px;
 }
 div#sidebar ul li{
-    background-color: #dddddd;
+    background-color: #1b02fff0;
     margin-top: 25px;
     width: 80%;
     box-shadow: 2px 2px 3px #000000b4;
@@ -57,7 +57,7 @@ section.conteiner{
     top:0;
     margin: 0 auto 0 auto;
     padding: 15px;
-    text-align: justify;
+    text-align: center;
 }
 section div#cabecalho{
     border-bottom: 1px dotted black;
@@ -92,6 +92,9 @@ input.btn{
     display:block;
     
 }
+input#init{
+    margin-top: 10px;
+}
 h1{
     text-align: center;
 }
@@ -125,6 +128,10 @@ footer p{
     display:none;
     float: right;
     transition: all .5s ease;
+    animation-duration: .8s;
+    animation-name: sidebar;
+}
+@keyframes sidebar{
     
 }
 span.menu{
@@ -137,7 +144,7 @@ span.menu{
     position: relative;
     text-align: center;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
     #sidebar{
         position: absolute;
         left: -250px;
