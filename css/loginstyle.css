@@ -8,14 +8,27 @@ div#login{
 h1{
     font-size: 48pt;
 }
+label{
+    font-size: 36pt;
+    margin-top: 10px;
+}
 div#cadastro{
     text-align: center;
     font-size: 15pt;
-    
+
 }
 .btns{
     width: 80%;
     height: 60px;
    font-size: 30pt;
-
+    margin: 10px 0 10px 0;
+}
+#log{
+    width: 50%;
+    height: 63px;
+    font-size: 48pt;
+    padding: auto;
+}
+i{
+    font-size: 50px;
 }
