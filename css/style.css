@@ -17,7 +17,7 @@ div.amostras{
     
 }
 div#sidebar{
-    height: 100vw;
+    height: 100%;
     width: 270px;
     background: linear-gradient(to bottom, #171433, #1500ffa1);
     display: flex;
@@ -57,7 +57,7 @@ div#sidebar ul li:hover{
 
 }
 section.conteiner{
-    width: 90%;
+    width: 100%;
     float: right;
     top:0;
     margin: 0 auto 0 auto;

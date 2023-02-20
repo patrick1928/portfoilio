@@ -3,11 +3,19 @@ div#login{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-top: 50px;
+}
+h1{
+    font-size: 48pt;
 }
 div#cadastro{
-
+    text-align: center;
+    font-size: 15pt;
+    
 }
 .btns{
-    width: 60%;
-    
+    width: 80%;
+    height: 60px;
+   font-size: 30pt;
+
 }
