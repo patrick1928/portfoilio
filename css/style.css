@@ -17,7 +17,7 @@ div.amostras{
 }
 div#sidebar{
     height: 100%;
-    width: 30vh;
+    width: 35vh;
     background: linear-gradient(to bottom, #171433, #1500ffa1);
     display: flex;
     flex-direction: column;
@@ -155,7 +155,7 @@ span.menu{
 @media screen and (max-width:700px){
     #sidebar{
         position: absolute;
-        left: -250px;
+        left: -260px;
         z-index: 100;
     }
   .conteiner{

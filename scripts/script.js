@@ -8,17 +8,17 @@ var iconCheck = document.getElementById('icone')
 const sidebarCheck = () =>{
     if (check.checked){
         sidebar.style.left = '0';
-        iconCheck.style.left ='170px'
+        iconCheck.style.left ='30vh'
         iconCheck.setAttribute('class', 'fa-solid fa-x');
     }else{
-        sidebar.style.left = '-250px';
+        sidebar.style.left = '-260px';
         iconCheck.style.left ='0'
         iconCheck.setAttribute('class','fas fa-bars');
     }
     }
     //esconder o sidebar quando o usuario pressionar fora do proprio
     const mouseLeave = () =>{
-        sidebar.style.left = '-250px'
+        sidebar.style.left = '-260px'
         iconCheck.style.left = '0'
         check.checked = false
         iconCheck.setAttribute('class','fas fa-bars');
