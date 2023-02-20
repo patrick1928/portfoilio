@@ -17,7 +17,7 @@ const sidebarCheck = () =>{
     }
     }
     //esconder o sidebar quando o usuario pressionar fora do proprio
-    const mouseOut = () =>{
+    const mouseLeave = () =>{
         sidebar.style.left = '-250px'
         iconCheck.style.left = '0'
         check.checked = false
@@ -25,7 +25,7 @@ const sidebarCheck = () =>{
         }
     
     sidebar.addEventListener('mouseleave', function(){
-    mouseOut()
+    mouseLeave()
     //fim
     //função de mostrar e esconder o sidebar
 })
@@ -36,8 +36,8 @@ check.addEventListener('click' ,function(){
 //fim
 //projeto hora
 function atualizar() {
-    //let horatual = hora.getHours();
-    let horatual = 19
+    let horatual = hora.getHours();
+    
     if (horatual < 12 && horatual >= 6){
         diurno.style.background = '#1b02fff0'
         diurno.innerHTML += `<p>${horatual} horas da manha!</p>`
