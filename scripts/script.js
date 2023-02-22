@@ -93,3 +93,19 @@ function contar(){
         alert(`[ERROR]-${isNumber}`)
     }
     //fim
+    //calculadora
+    const calc = () =>{
+    var calculadora = {
+        num1:1,
+    }
+    var tabela = document.getElementById('calculadora')
+    for(let c = 0;c <= 9;c++){
+        tabela.innerHTML += `<input class="num" type="button" value="${c}">`
+        calculadora[`num${c}`] = c
+        if(c == 4){
+            tabela.innerHTML += '<br>'
+        }
+    }
+    }
+    calc()
+    //fim

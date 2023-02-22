@@ -151,6 +151,18 @@ span.menu{
     position: relative;
     text-align: center;
 }
+input.num{
+    background: #000000;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    
+}
+td{
+ width: 50%;
+
+}
 @media screen and (max-width:700px){
     #sidebar{
         position: absolute;
