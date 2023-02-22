@@ -94,18 +94,17 @@ function contar(){
     }
     //fim
     //calculadora
-    const calc = () =>{
     var calculadora = {
-        num1:1,
-    }
-    var tabela = document.getElementById('calculadora')
-    for(let c = 0;c <= 9;c++){
-        tabela.innerHTML += `<input class="num" type="button" value="${c}">`
-        calculadora[`num${c}`] = c
-        if(c == 4){
-            tabela.innerHTML += '<br>'
+            num1:1,
         }
+    const calc = () =>{
+        
+        var tabela = document.getElementById('projetocalculadora')
+        for(let c = 9;c >= 0;c--){
+            tabela.innerHTML += `<td><input class="num" type="button" value="${c}"></td>`
+            calculadora[`num${c}`] = c
+            if(c == 7 || c == 4 || c == 1){
+            tabela.innerHTML += '<br>'
     }
-    }
-    calc()
-    //fim
+}}
+calc()
