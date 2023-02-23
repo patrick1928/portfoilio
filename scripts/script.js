@@ -95,16 +95,26 @@ function contar(){
     //fim
     //calculadora
     var calculadora = {
-            num1:1,
+            num9:9,
         }
-    const calc = () =>{
-        
-        var tabela = document.getElementById('projetocalculadora')
-        for(let c = 9;c >= 0;c--){
-            tabela.innerHTML += `<td><input class="num" type="button" value="${c}"></td>`
-            calculadora[`num${c}`] = c
-            if(c == 7 || c == 4 || c == 1){
-            tabela.innerHTML += '<br>'
+    var input = {
+
     }
-}}
+const calc = () =>{
+    let valores = document.getElementById('digitos')
+    for(let c = 9; c >= 0; c--){
+        valores.innerHTML += `<input type="button" class="num" value="${c}">`
+        calculadora[`num${c}`] = c
+        input[`elementos`] += document.getElementsByClassName('num')
+    
+        
+           if (c == 7 || c == 4){
+            valores.innerHTML += '<br>'
+        }
+        
+    }
+    //input[`elementos`].addEventListener('click', function(){alert('ola')})
+    console.log(input.elementos)
+}
+
 calc()
