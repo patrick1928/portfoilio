@@ -96,13 +96,15 @@ div#resultado p{
 }
 
 div#projetocalculadora{
-    width: ;
     height: 300px;
+    width: 40vh;
     border: 1px solid black;
     padding: 10px;
+    
 }
 #operadores{
-    width: 20%;
+    position: relative;
+    
     display:flex;
     flex-direction: column;
     float: right;
@@ -187,8 +189,13 @@ input.num{
     text-align: center;
 }
 input.num:last-child{
-    margin-left:25%;
+    
 }
+    input#resultado{
+        width: 60px;
+        height: 50px;
+        float: right;
+    }
 
 @media screen and (max-width:700px){
     #sidebar{

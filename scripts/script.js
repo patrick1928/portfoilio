@@ -111,48 +111,49 @@ function contar(){
             break
         }
     }
+    var num1 = []
     var calculadora = Number()
-    function numeros(x=0){
+    function numeros(x=0, y){
         var x = x
         switch (x) {
             case 0:
-                calculadora.num = x
                 
+                num1.push('0')          
                 break;
             case 1:
-                calculadora.num = x
-              
+                num1.push('1') 
                 break;
             case 2:
-                calculadora.num = x
+                num1.push('2') 
                 break;
             case 3:
-                calculadora.num = x
+                num1.push('3') 
                 break;
             case 4:
-                calculadora.num = x
+                num1.push('4') 
                 break;
             case 5:
-                calculadora.num = x
+                num1.push('5') 
                 break;
             case 6:
-                calculadora.num = x
+                num1.push('6')
                  break;
             case 7:
-                calculadora.num = x
+                num1.push('7') 
                 break;
             case 8:
-                calculadora.num = x
+                num1.push('8') 
                 break;
             case 9:
-                calculadora.num = x
+                num1.push('9') 
                 
-                return
+                break
+                
+        }}
+        const calcular = (x,y)=>{
+
         }
-       
-    }
-    const calc = ()=>{
-      //if()
-        
-    }
-    calc()
+
+        let operacao = document.querySelector('input#resultado').addEventListener('click', function(){
+            calcular()
+        })
