@@ -94,27 +94,65 @@ function contar(){
     }
     //fim
     //calculadora
-    var calculadora = {
-            num9:9,
+    function conta(y=0) {
+        var y = y
+        switch (y){
+            case 1:
+                alert('somar')
+            break
+            case 2:
+                alert('subtrair')
+            break
+            case 3:
+                alert('multiplicar')
+            break
+            case 4:
+                alert('dividir')
+            break
         }
-    var input = {
-
     }
-const calc = () =>{
-    let valores = document.getElementById('digitos')
-    for(let c = 9; c >= 0; c--){
-        valores.innerHTML += `<input type="button" class="num" value="${c}">`
-        calculadora[`num${c}`] = c
-        input[`elementos`] += document.getElementsByClassName('num')
-    
-        
-           if (c == 7 || c == 4){
-            valores.innerHTML += '<br>'
+    var calculadora = Number()
+    function numeros(x=0){
+        var x = x
+        switch (x) {
+            case 0:
+                calculadora.num = x
+                
+                break;
+            case 1:
+                calculadora.num = x
+              
+                break;
+            case 2:
+                calculadora.num = x
+                break;
+            case 3:
+                calculadora.num = x
+                break;
+            case 4:
+                calculadora.num = x
+                break;
+            case 5:
+                calculadora.num = x
+                break;
+            case 6:
+                calculadora.num = x
+                 break;
+            case 7:
+                calculadora.num = x
+                break;
+            case 8:
+                calculadora.num = x
+                break;
+            case 9:
+                calculadora.num = x
+                
+                return
         }
+       
+    }
+    const calc = ()=>{
+      //if()
         
     }
-    //input[`elementos`].addEventListener('click', function(){alert('ola')})
-    console.log(input.elementos)
-}
-
-calc()
+    calc()

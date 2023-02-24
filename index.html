@@ -66,12 +66,24 @@
               <h3>Calculadora</h3>
               <div id="resultado"><p>Resultado aqui...</p></div>
               <div id="operadores">
-                <td><input type="button" class="op" value="+"></td>
-                <td><input type="button" class="op" value="-"></td>
-                <td><input type="button" class="op" value="*"></td>
-                <td><input type="button" class="op" value="/"></td>
+                <td><input type="button" class="op" id="somar" value="+" onclick="conta(1)"></td>
+                <td><input type="button" class="op" id="subtrair" value="-" onclick="conta(2)"></td>
+                <td><input type="button" class="op" id="mult" value="*" onclick="conta(3)"></td>
+                <td><input type="button" class="op" id="divsao" value="/" onclick="conta(4)"></td>
               </div>
               <div id="digitos">
+                <td><input type="button" class="num" value="9" onclick="numeros(9)"></td>
+                <td><input type="button" class="num" value="8" onclick="numeros(8)"></td>
+                <td><input type="button" class="num" value="7" onclick="numeros(7)"></td>
+                <br>
+                <td><input type="button" class="num" value="6" onclick="numeros(6)"></td>
+                <td><input type="button" class="num" value="5" onclick="numeros(5)"></td>
+                <td><input type="button" class="num" value="4" onclick="numeros(4)"></td>
+                <br>
+                <td><input type="button" class="num" value="3" onclick="numeros(3)"></td>
+                <td><input type="button" class="num" value="2" onclick="numeros(2)"></td>
+                <td><input type="button" class="num" value="1" onclick="numeros(1)"></td>
+                <td><input type="button" class="num" value="0" onclick="numeros(0)"></td>
 
               </div>
              </div>
