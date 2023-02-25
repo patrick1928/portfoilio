@@ -64,12 +64,12 @@
              <hr>
              <div id="projetocalculadora">
               <h3>Calculadora</h3>
-              <div id="resultado"><p>Resultado aqui...</p></div>
+              <div id="resultado"><p id="display"></p></div>
               <div id="operadores">
-                <td><input type="button" class="op" id="somar" value="+" onclick="conta(1)"></td>
-                <td><input type="button" class="op" id="subtrair" value="-" onclick="conta(2)"></td>
-                <td><input type="button" class="op" id="mult" value="*" onclick="conta(3)"></td>
-                <td><input type="button" class="op" id="divsao" value="/" onclick="conta(4)"></td>
+                <td><input type="button" class="op" id="somar" value="+" onclick="conta('somar')"></td>
+                <td><input type="button" class="op" id="subtrair" value="-" onclick="conta(subtrair)"></td>
+                <td><input type="button" class="op" id="mult" value="*" onclick="conta('multiplicar')"></td>
+                <td><input type="button" class="op" id="divsao" value="/" onclick="conta('dividir')"></td>
               </div>
               <div id="digitos">
                 <td><input type="button" class="num" value="9" onclick="numeros(9)"></td>

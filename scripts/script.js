@@ -94,66 +94,42 @@ function contar(){
     }
     //fim
     //calculadora
-    function conta(y=0) {
-        var y = y
-        switch (y){
-            case 1:
-                alert('somar')
-            break
-            case 2:
-                alert('subtrair')
-            break
-            case 3:
-                alert('multiplicar')
-            break
-            case 4:
-                alert('dividir')
-            break
-        }
-    }
-    var num1 = []
-    var calculadora = Number()
-    function numeros(x=0, y){
-        var x = x
-        switch (x) {
-            case 0:
-                
-                num1.push('0')          
-                break;
-            case 1:
-                num1.push('1') 
-                break;
-            case 2:
-                num1.push('2') 
-                break;
-            case 3:
-                num1.push('3') 
-                break;
-            case 4:
-                num1.push('4') 
-                break;
-            case 5:
-                num1.push('5') 
-                break;
-            case 6:
-                num1.push('6')
-                 break;
-            case 7:
-                num1.push('7') 
-                break;
-            case 8:
-                num1.push('8') 
-                break;
-            case 9:
-                num1.push('9') 
+    
+    function conta(y=''){
+        switch(y){
+            case 'somar':
+                    for(let i = 0; i < valores.length;i++){
+                       valoresSomados += valores[i]
+                       valores.push(valoresSomados)
+                    }
+                    display.innerHTML = ''
+                    
+                   
+                   break
+            case subtrair:
+                for(let i = 0; i < valores.length;i++){
+                    valoresSomados += valores[i]
+                    
+                 }
+                 display.innerHTML = ''
+                 
                 
                 break
-                
-        }}
-        const calcular = (x,y)=>{
 
-        }
+                }
+            }
+    let display = document.getElementById('display')
+    function numeros(x){
+        
+        valores.push(x)
+        
+        display.innerHTML += x
+    }
 
-        let operacao = document.querySelector('input#resultado').addEventListener('click', function(){
-            calcular()
+    var valores = []
+    var valoresSomados = 0
+
+        let operacao = document.querySelector('input#resultado')
+        operacao.addEventListener('click', function(){
+            conta()
         })
