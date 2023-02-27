@@ -64,28 +64,25 @@
              <hr>
              <div id="projetocalculadora">
               <h3>Calculadora</h3>
-              <div id="resultado"><p id="display"></p></div>
-              <div id="operadores">
-                <td><input type="button" class="op" id="somar" value="+" onclick="conta('somar')"></td>
-                <td><input type="button" class="op" id="subtrair" value="-" onclick="conta('subtrair')"></td>
-                <td><input type="button" class="op" id="mult" value="*" onclick="conta('multiplicar')"></td>
-                <td><input type="button" class="op" id="divsao" value="/" onclick="conta('dividir')"></td>
-              </div>
-              <div id="digitos">
-                <td><input type="button" class="num" value="9" onclick="numeros(9)"></td>
-                <td><input type="button" class="num" value="8" onclick="numeros(8)"></td>
-                <td><input type="button" class="num" value="7" onclick="numeros(7)"></td>
-                <br>
-                <td><input type="button" class="num" value="6" onclick="numeros(6)"></td>
-                <td><input type="button" class="num" value="5" onclick="numeros(5)"></td>
-                <td><input type="button" class="num" value="4" onclick="numeros(4)"></td>
-                <br>
-                <td><input type="button" class="num" value="3" onclick="numeros(3)"></td>
-                <td><input type="button" class="num" value="2" onclick="numeros(2)"></td>
-                <td><input type="button" class="num" value="1" onclick="numeros(1)"></td>
-                <br>
-                <td><input type="button" class="num" value="0" onclick="numeros(0)"></td>
-                <td><input type="button" id="resultado" value="="></td>
+              <div id="resultado"><p id="display">0</p></div>
+              <div class="calculadora__keys">
+                <button class="op" data-action="add">+</button>
+                <button class="op" data-action="subtract">-</button>
+                <button class="op" data-action="multiply">*</button>
+                <button class="op" data-action="divide">/</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>0</button>
+                <button data-action="decimal">.</button>
+                <button data-action="clear">AC</button>
+                <button data action="calculate" class="key-equal">=</button>
               </div>
              </div>
            </div>

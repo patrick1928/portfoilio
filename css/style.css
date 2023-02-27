@@ -102,17 +102,6 @@ div#projetocalculadora{
     padding: 10px;
     
 }
-#operadores{
-    position: relative;
-    
-    display:flex;
-    flex-direction: column;
-    float: right;
-}
-.op{
-    width:50px;
-    height: 50px;
-}
 #contador{
     height: 150px;
     display: flex;
@@ -179,17 +168,6 @@ span.menu{
     width: 60%;
     position: relative;
     text-align: center;
-}
-input.num{
-    background: #000000;
-    color: white;
-    width: 60px;
-    height: 50px;
-    border: 1px solid white;
-    text-align: center;
-}
-input.num:last-child{
-    
 }
     input#resultado{
         width: 60px;

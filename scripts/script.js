@@ -4,6 +4,17 @@ var projeto = document.querySelector('div#projeto')
 var check = document.querySelector('input#check')
 var sidebar = document.querySelector('div#sidebar')
 var iconCheck = document.querySelector('i#icone')
+let display = document.getElementById('display')
+let calculadora = document.querySelector('div.projetocalculadora')
+const key = calculadora.querySelector('.calculadora__keys')
+var documentTitle = document.title;
+window.addEventListener('blur', () => {
+    document.title = 'volte por favor! ;(';
+});
+window.addEventListener('focus', () => {
+    document.title = documentTitle
+});
+
 //interação com o sidebar
 const sidebarCheck = () =>{
     if (check.checked){
@@ -58,8 +69,10 @@ function atualizar() {
 
 }
 }
+
 //fim
 //projeto cronometro
+
 function contar(){
     function isNumber(x=0, y=0){
         if (x <= 0 || y < 0){
@@ -92,40 +105,11 @@ function contar(){
     }else
         alert(`[ERROR]-${isNumber}`)
     }
+
     //fim
     //calculadora
-    
-  
-    
-    break
-    function conta(y=''){
-        switch(y){
-            case 'somar':
-                   
-            case 'subtrair':
-                for(let i = 0; i < valores.length;i++){
-                    valoresSomados += valores[i]
-                    
-                 }
-                 display.innerHTML = ''
-                 
-                
-                break
-
-                }
-            }
-    let display = document.getElementById('display')
-    function numeros(x){
-        
-        valores.push(x)
-        
-        display.innerHTML += x
-    }
-
-    var valores = []
-    var valoresSomados = 0
-
-        let operacao = document.querySelector('input#resultado')
-        operacao.addEventListener('click', function(){
-            conta()
-        })
+keys.addEventListener('click', e => {
+if (e.target.matches('button')){
+    console.log(keys)
+}
+})
