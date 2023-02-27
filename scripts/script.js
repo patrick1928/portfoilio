@@ -95,18 +95,14 @@ function contar(){
     //fim
     //calculadora
     
+  
+    
+    break
     function conta(y=''){
         switch(y){
             case 'somar':
-                    for(let i = 0; i < valores.length;i++){
-                       valoresSomados += valores[i]
-                       valores.push(valoresSomados)
-                    }
-                    display.innerHTML = ''
-                    
                    
-                   break
-            case subtrair:
+            case 'subtrair':
                 for(let i = 0; i < valores.length;i++){
                     valoresSomados += valores[i]
                     
