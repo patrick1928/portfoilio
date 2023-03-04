@@ -6,7 +6,7 @@ var sidebar = document.querySelector('div#sidebar')
 var iconCheck = document.querySelector('i#icone')
 let display = document.getElementById('display')
 let calculadora = document.querySelector('div.projetocalculadora')
-const key = calculadora.querySelector('.calculadora__keys')
+
 var documentTitle = document.title;
 window.addEventListener('blur', () => {
     document.title = 'volte por favor! ;(';
