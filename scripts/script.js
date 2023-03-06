@@ -5,7 +5,7 @@ var check = document.querySelector('input#check')
 var sidebar = document.querySelector('div#sidebar')
 var iconCheck = document.querySelector('i#icone')
 let display = document.getElementById('display')
-let calculadora = document.querySelector('div.projetocalculadora')
+let calculadora = document.querySelector('div#projetocalculadora')
 
 var documentTitle = document.title;
 window.addEventListener('blur', () => {
@@ -108,8 +108,21 @@ function contar(){
 
     //fim
     //calculadora
-keys.addEventListener('click', e => {
-if (e.target.matches('button')){
-    console.log(keys)
+const calc = () => {
+    let c = 9
+    for(c ; c>= 0; c--){
+        calculadora.innerHTML += `<input type="button" id="num${c}" class="numCalc" value="${c}">`
+       
+    }
+    let addEvent = document.getElementsByClassName('numCalc')
+    addEvent.addEventListener('click', () => {
+        alert(`clicou no ${addEvent}`)
+    })
+    const somar = () =>{
+        function somar(){
+
+        }
+    }
+    somar()
 }
-})
+calc()
