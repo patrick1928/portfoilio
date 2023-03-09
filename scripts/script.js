@@ -111,18 +111,14 @@ function contar(){
 const calc = () => {
     let c = 9
     for(c ; c>= 0; c--){
-        calculadora.innerHTML += `<input type="button" id="num${c}" class="numCalc" value="${c}">`
+        calculadora.innerHTML += `<input type="button" id="num${c}" class="numCalc" value="${c}" onclick="value(${c})">`
        
     }
     let addEvent = document.getElementsByClassName('numCalc')
-    addEvent.addEventListener('click', () => {
-        alert(`clicou no ${addEvent}`)
-    })
-    const somar = () =>{
-        function somar(){
-
-        }
+   function value(n1=0){
+    if (n1 == 0){
+        alert('0')
     }
-    somar()
+   }
 }
 calc()
