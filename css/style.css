@@ -118,6 +118,10 @@ input.btn{
 input#init{
     margin-top: 10px;
 }
+input.numCalc{
+    font-size: 2em;
+    width: 2em;
+}
 h1{
     text-align: center;
 }
