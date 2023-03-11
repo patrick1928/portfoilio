@@ -4,7 +4,7 @@ var projeto = document.querySelector('div#projeto')
 var check = document.querySelector('input#check')
 var sidebar = document.querySelector('div#sidebar')
 var iconCheck = document.querySelector('i#icone')
-let display = document.querySelector('p#display')
+var display = document.querySelector('div#resultado')
 let calculadora = document.querySelector('div#projetocalculadora')
 
 var documentTitle = document.title;
@@ -117,5 +117,5 @@ const calc = () => {
 calc()
 function numbers(c) {
     alert(c)
-    display.innerHTML = c
+    display.innerHTML = c;
 }
