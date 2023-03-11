@@ -4,7 +4,7 @@ var projeto = document.querySelector('div#projeto')
 var check = document.querySelector('input#check')
 var sidebar = document.querySelector('div#sidebar')
 var iconCheck = document.querySelector('i#icone')
-var display = document.querySelector('div#resultado')
+var display = document.querySelector('div#display')
 let calculadora = document.querySelector('div#projetocalculadora')
 
 var documentTitle = document.title;
@@ -108,14 +108,11 @@ function contar(){
 
     //fim
     //calculadora
-const calc = () => {
-    let c = 9
-    for(c ; c>= 0; c--){
-        calculadora.innerHTML += `<input type="button" id="num${c}" class="numCalc" value="${c}" onclick="numbers('${c}')">`;
+    display.innerHTML = ''
+    var primeirosNumerosDigitados = []
+    function receber(num){
+        let x = Number(num)
+        
+        display.innerHTML += `<p>${x}</p>`
+    
     }
-}
-calc()
-function numbers(c) {
-    alert(c)
-    display.innerHTML = c;
-}

@@ -84,15 +84,13 @@ div#projetos{
     align-items: center;
     
 }
-div#resultado{
+div#display{
     border: 1px solid black;
     height: 40px;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-div#resultado p{
-    text-align: center;
-    margin-top:10px;
+    display: flex;
+    padding: 10px auto 10px;
 }
 
 div#projetocalculadora{
